@@ -1,27 +1,32 @@
-.tags-h1{
+/* Default styles for the tags heading */
+.tags-h1 {
     margin-top: 50px;
     font-weight: 400;
 }
 
-.tags-p{
+/* Default styles for the tags paragraph */
+.tags-p {
     margin: 0px;
     font-size: 15px;
 }
 
-.tags-list-container{
+/* Default styles for the tags list container */
+.tags-list-container {
     padding: 30px 0px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
 }
 
-.tag{
+/* Default styles for individual tags */
+.tag {
     padding: 10px;
     border: solid 1px #d2d2d2;
     border-radius: 2px;
 }
 
-.tag h5{
+/* Default styles for tag headings */
+.tag h5 {
     display: inline-block;
     margin: 10px 0px;
     padding: 5px 5px;
@@ -29,8 +34,19 @@
     color: #39739d;
 }
 
-.tag p{
+/* Default styles for tag paragraphs */
+.tag p {
     font-size: 14px;
     color: #323232;
     line-height: 17px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+
+    /* For example, you can change the grid columns to stack tags on top of each other */
+    .tags-list-container {
+        grid-template-columns: 1fr; /* Stack tags vertically */
+    }
 }

@@ -1,18 +1,22 @@
-.ask-question{
+/* Default styles for the "Ask a Question" section */
+.ask-question {
     min-height: 100vh;
-    background-color: #f1f2f3;
+    background-color: #020202;
 }
 
-.ask-ques-container{
+/* Container for the "Ask a Question" content */
+.ask-ques-container {
     margin: auto;
     max-width: 1200px;
 }
 
-.ask-ques-container h1{
+/* Title styles */
+.ask-ques-container h1 {
     padding: 80px 0px 20px 0px;
 }
 
-.ask-ques-container form .ask-form-container{
+/* Styles for the form container */
+.ask-ques-container form .ask-form-container {
     padding: 20px;
     background-color: white;
     border-radius: 3px;
@@ -21,18 +25,21 @@
      0 1px 4px rgb(0 0 0 / 10%);
 }
 
-.ask-form-container label h4{
+/* Label heading styles */
+.ask-form-container label h4 {
     margin-bottom: 0%;
 }
 
-.ask-form-container label p{
+/* Label paragraph styles */
+.ask-form-container label p {
     margin: 0%;
     font-size: 13px;
     padding: 3px 0px;
 }
 
+/* Input and textarea styles */
 .ask-form-container label input,
-.ask-form-container label textarea{
+.ask-form-container label textarea {
     padding: 10px;
     border: solid 1px #0000003e;
     font-family: 'Roboto', sans-serif;
@@ -40,7 +47,8 @@
     resize: vertical;
 }
 
-.review-btn{
+/* Review button styles */
+.review-btn {
     margin: 50px 0px;
     padding: 10px;
     background-color: #009dff;
@@ -50,6 +58,29 @@
     cursor: pointer;
     transition: 0.3s;
 }
-.review-btn:hover{
+
+/* Hover effect for the review button */
+.review-btn:hover {
     background-color: #0086d8;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .ask-form-container {
+        padding: 15px;
+    }
+
+    .ask-form-container label h4 {
+        font-size: 16px;
+    }
+
+    .ask-form-container label p {
+        font-size: 12px;
+    }
+
+    .ask-form-container label input,
+    .ask-form-container label textarea {
+        font-size: 14px;
+    }
 }

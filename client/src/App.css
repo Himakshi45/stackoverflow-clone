@@ -13,3 +13,17 @@
   padding: 24px;
   box-sizing: border-box;
 }
+/* CSS Example */
+.App {
+  transition: background-color 0.5s;
+}
+
+.day {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.night {
+  background-color: #000000;
+  color: #FFFFFF;
+}

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Auth.css'
 import AboutAuth from './AboutAuth'
 import { signup,login } from '../../../actions/auth'
-import icon from '../../../assets/icon.png'
+import QA from '../../../assets/QA.gif'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 const Auth = () => {
@@ -35,10 +35,12 @@ const Auth = () => {
   }
 
   return (
+    
       <section class='auth-section'>
           { isSignup && <AboutAuth />}
           <div class='auth-container-2'>
-              { !isSignup && <img src={icon} alt='stack overflow' className='login-logo'/>}
+            
+              { !isSignup && <img src={QA} alt='stack overflow' className='login-logo'/>}
               <form onSubmit={handleSubmit}>
                   {
                       isSignup && (

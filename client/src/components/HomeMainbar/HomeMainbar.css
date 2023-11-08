@@ -1,21 +1,20 @@
-.main-bar{
-    width: calc( 100% - 300px - 24px );
+/* Default styles for all screen sizes */
+.main-bar {
+    width: calc(100% - 300px - 24px);
     float: left;
     margin: 25px 0px;
     padding: 0;
 }
 
-.main-bar-header{
+/* Default header styles */
+.main-bar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.main-bar-header h1{
-    font-weight: 400;
-}
-
-.main-bar-header .ask-btn{
+/* Default button styles */
+.main-bar-header .ask-btn {
     padding: 10px 15px;
     border-radius: 4px;
     background-color: #009dff;
@@ -25,11 +24,8 @@
     transition: 0.3s;
 }
 
-.main-bar-header .ask-btn:hover{
-    background-color: #0086d8;
-}
-
-.display-question-container{
+/* Default container styles for questions */
+.display-question-container {
     min-height: 80px;
     width: 100%;
     display: flex;
@@ -38,53 +34,94 @@
     border-bottom: solid 1px #edeff0;
 }
 
-.display-question-container .display-votes-ans{
+/* Default styles for question details */
+.display-question-container .display-votes-ans {
     padding: 20px;
 }
-.display-question-container .display-votes-ans p{
+
+/* Default styles for paragraph elements */
+.display-question-container .display-votes-ans p {
     margin: 0%;
     text-align: center;
 }
 
-.display-question-details{
+/* Default styles for question details */
+.display-question-details {
     flex-grow: 1;
     padding: 0px 20px;
 }
 
-.question-title-link{
+/* Default link styles for question titles */
+.question-title-link {
     text-decoration: none;
     color: #037ecb;
     transition: 0.3s;
 }
 
-.question-title-link:hover{
+/* Default link hover effect for question titles */
+.question-title-link:hover {
     color: #009dff;
 }
 
-.display-question-details p{
+/* Default styles for paragraph elements within question details */
+.display-question-details p {
     padding: 4px;
     margin: 0%;
 }
 
-.display-tags-time .display-tags{
+/* Default styles for tags and time information */
+.display-tags-time .display-tags {
     display: flex;
     flex-wrap: wrap;
 }
 
-.display-tags-time{
+/* Default styles for the container holding tags and time information */
+.display-tags-time {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.display-tags-time .display-tags p{
+/* Default styles for individual tags */
+.display-tags-time .display-tags p {
     margin: 2px;
     padding: 4px;
     font-size: 13px;
     background-color: #edeff0;
     color: #39739d;
 }
+
+/* Default styles for time information */
 .display-tags-time .display-time {
     font-size: 13px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .main-bar {
+        width: 100%;
+    }
+
+    .main-bar-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-bar-header .ask-btn {
+        margin-top: 10px;
+    }
+
+    .display-question-container {
+        flex-direction: column;
+    }
+
+    .display-question-container .display-votes-ans {
+        padding: 10px;
+    }
+
+    .display-question-details {
+        padding: 10px;
+    }
 }

@@ -1,4 +1,5 @@
-.user-details-container{
+/* Default styles for the user details container */
+.user-details-container {
     width: 100%;
     margin-top: 50px;
     display: flex;
@@ -6,18 +7,23 @@
     justify-content: space-between;
 }
 
-.user-details{
+/* Default styles for the user details */
+.user-details {
     display: flex;
     align-items: flex-start;
 }
 
-.user-name{
+/* Default styles for the user name */
+.user-name {
     padding-left: 20px;
 }
+
 .user-name p {
     color: #7e7e7e;
 }
-.edit-profile-btn{
+
+/* Default styles for the edit profile button */
+.edit-profile-btn {
     padding: 8px 10px;
     border: solid 1px #7e7e7e;
     border-radius: 2px;
@@ -25,38 +31,51 @@
     cursor: pointer;
     transition: 0.3s;
 }
-.edit-profile-btn:hover{
+
+.edit-profile-btn:hover {
     background-color: #f5f9fc;
 }
-.edit-profile-title{
+
+/* Default styles for the edit profile title */
+.edit-profile-title {
     padding: 20px 0px;
     border-bottom: solid 1px #dbd9d9;
 }
-.edit-profile-title-2{
+
+.edit-profile-title-2 {
     color: grey;
     font-weight: 400;
 }
+
+/* Default styles for the edit profile form */
 .edit-profile-form {
     padding: 20px;
     border: solid 1px #dbd9d9;
     border-radius: 5px;
 }
-.edit-profile-form label h3{
+
+/* Default styles for form labels */
+.edit-profile-form label h3 {
     margin: 0%;
     padding: 3px 0px;
 }
-.edit-profile-form label p{
+
+.edit-profile-form label p {
     margin: 0%;
     padding: 3px 0px;
 }
-.edit-profile-form label input, .edit-profile-form label textarea{
+
+/* Default styles for form inputs and textarea */
+.edit-profile-form label input,
+.edit-profile-form label textarea {
     padding: 5px;
     margin-bottom: 20px;
     border: solid 1px #dbd9d9;
-    width: 50%;
+    width: 100%; /* Adjust width for responsiveness */
 }
 
-.user-submit-btn{
+/* Default styles for the user submit button */
+.user-submit-btn {
     padding: 14px 10px;
     background-color: #0a95ff;
     color: white;
@@ -66,15 +85,27 @@
     cursor: pointer;
 }
 
-.user-submit-btn:hover{
+.user-submit-btn:hover {
     background-color: #0074cc;
 }
 
-.user-cancel-btn{
+/* Default styles for the user cancel button */
+.user-cancel-btn {
     padding: 14px 10px;
     color: #0a95ff;
     background-color: transparent;
     border: none;
     margin-left: 10px;
     cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+
+    /* For example, you can change the width of the form inputs */
+    .edit-profile-form label input,
+    .edit-profile-form label textarea {
+        width: 80%; /* Adjust width for smaller screens */
+    }
 }

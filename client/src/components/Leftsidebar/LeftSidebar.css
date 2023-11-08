@@ -1,13 +1,16 @@
-.left-sidebar{
+/* Default styles for the left sidebar */
+.left-sidebar {
     width: 164px;
-    box-shadow: 1px 1px 0 rgba(0,0,0, 0.2);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
     transition: box-shadow ease-in-out 0.1s, transform ease-in-out 0.1s;
     transform: translateZ(0);
     box-sizing: border-box;
     font-size: 13px;
+    color: black;
 }
 
-.side-nav{
+/* Default styles for the side navigation */
+.side-nav {
     height: auto;
     max-width: 100%;
     position: sticky;
@@ -15,18 +18,19 @@
     padding: 20px 0px;
 }
 
-.side-nav-div{
+/* Default styles for individual navigation items */
+.side-nav-div {
     padding: 10px 0px;
-
+    color:aliceblue
 }
 
-.side-nav-div div{
+.side-nav-div div {
     padding-left: 10px;
 }
 
-.side-nav-links{
+.side-nav-links {
     text-decoration: none;
-    color: #3a3a3a;
+    color: #f9f5f5;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -34,13 +38,34 @@
     transition: 0.2s;
 }
 
-.side-nav-links:hover{
+.side-nav-links:hover {
     color: black;
 }
 
-.active{
+/* Default styles for the active navigation item */
+.active {
     font-weight: bolder;
     color: black;
     background-color: rgb(225, 225, 225);
     border-right: solid 3px #ef8236;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .left-sidebar {
+        width: 50%;
+    }
+
+    .side-nav {
+        margin: 20px 0px;
+    }
+
+    .side-nav-div {
+        padding: 8px 0px;
+    }
+
+    .side-nav-links {
+        padding-left: 8px;
+    }
 }

@@ -9,6 +9,7 @@ import ProfileBio from './ProfileBio'
 import EditProfileForm from './EditProfileForm'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBirthdayCake,faPen} from '@fortawesome/free-solid-svg-icons'
+//import UserLocation from '../../UserLocation'
 const UserProfile = () => {
 
     const { id } = useParams()
@@ -51,6 +52,7 @@ const UserProfile = () => {
                         }
                     </>
                 </section>
+                
             </div>
         </div>
     )

@@ -1,11 +1,13 @@
-.user-list-container{
+/* Default styles for the user list container */
+.user-list-container {
     padding: 30px 0px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 30px;
 }
 
-.user-profile-link{
+/* Default styles for the user profile link */
+.user-profile-link {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -13,12 +15,27 @@
     color: black;
 }
 
-.user-profile-link h3{
+/* Default styles for the user profile link h3 */
+.user-profile-link h3 {
     padding: 10px 13px;
     background-color: #d3d3d3;
     border-radius: 50%;
 }
 
-.user-profile-link h5{
+/* Default styles for the user profile link h5 */
+.user-profile-link h5 {
     margin: 0px 10px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+
+    /* For example, you can change the grid columns and spacing */
+    .user-list-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust column width */
+        gap: 20px; /* Reduce gap between items */
+    }
+
+    /* You can also adjust padding or font sizes for better readability on smaller screens */
 }

@@ -1,4 +1,6 @@
-.main-nav{
+/* Default styles for the main navigation bar */
+/* Default styles for the main navigation */
+.main-nav {
   min-height: 50px;
   width: 100%;
   margin: 0% auto;
@@ -14,7 +16,8 @@
   align-items: center;
 }
 
-.navbar{
+/* Default styles for the navbar */
+.navbar {
   height: 100%;
   min-width: 85%;
   display: flex;
@@ -22,11 +25,14 @@
   justify-content: space-between;
 }
 
-.nav-logo{
-  padding: 5px 25px;
+/* Default styles for the navigation logo */
+.nav-logo > img {
+  height: 30px !important;
+  object-fit: contain;
 }
 
-.nav-item{
+/* Default styles for navigation items */
+.nav-item {
   margin: 0px 3px;
   font-size: small;
   font-weight: 500;
@@ -35,23 +41,27 @@
   transition: 0.2s;
 }
 
-.nav-btn{
+/* Default styles for navigation buttons */
+.nav-btn {
   cursor: pointer;
   border-radius: 20px;
   padding: 10px 20px;
 }
 
-.nav-item:hover{
+/* Default styles for navigation items on hover */
+.nav-item:hover {
   background-color: rgb(226, 226, 226);
 }
 
-.navbar form{
+/* Default styles for the search form in the navbar */
+.navbar form {
   flex-grow: 1;
   padding: 0px 12px;
   position: relative;
 }
 
-.navbar form input{
+/* Default styles for the search input */
+.navbar form input {
   min-width: 90%;
   margin: 0;
   padding: 8px 10px 8px 32px;
@@ -60,13 +70,15 @@
   border-radius: 3px;
 }
 
+/* Default styles for the search icon */
 .navbar form .search-icon {
   position: absolute;
   left: 25px;
   top: 8px;
 }
 
-.nav-links{
+/* Default styles for navigation links */
+.nav-links {
   padding: 7px 13px;
   border: solid 1px blue;
   border-radius: 3px;
@@ -74,6 +86,54 @@
   cursor: pointer;
 }
 
-.nav-links:hover{
+/* Default styles for navigation links on hover */
+.nav-links:hover {
   background-color: #d3e4eb;
+}
+
+/* Media query for smaller screens, adjust as needed */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens (e.g., smartphones) here */
+
+  /* Reduce the minimum height of the main navigation */
+  .main-nav {
+      min-height: 40px;
+  }
+
+  /* Make the navbar items more compact */
+  .navbar {
+      flex-direction: row;
+      align-items: center;
+      min-width: 100%;
+  }
+
+  /* Adjust the padding for the navigation logo */
+  .nav-logo {
+      padding: 5px 15px;
+  }
+
+  /* Reduce the font size for navigation items */
+  .nav-item {
+      font-size: 12px;
+  }
+
+  /* Adjust the padding for navigation buttons */
+  .nav-btn {
+      padding: 8px 12px;
+  }
+
+  /* Adjust the padding for the search input */
+  .navbar form input {
+      padding: 6px 8px 6px 28px;
+  }
+
+  /* Adjust the position of the search icon */
+  .navbar form .search-icon {
+      left: 10px;
+  }
+
+  /* Adjust the padding for navigation links */
+  .nav-links {
+      padding: 5px 10px;
+  }
 }

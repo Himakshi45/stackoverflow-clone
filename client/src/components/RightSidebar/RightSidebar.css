@@ -1,17 +1,20 @@
-.right-sidebar{
+/* Default styles for the right sidebar */
+.right-sidebar {
     float: right;
     width: 300px;
     margin: 40px 0px 15px 24px;
     font-size: 15px;
+    color: black;
 }
 
-.widget{
+/* Default styles for widgets */
+.widget {
     margin-top: 10px;
-    box-shadow: 3px 3px 10px rgb(0 0 0 / 5%),
-    -3px -3px 10px rgb(0 0 0 / 5%);
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 5%), -3px -3px 10px rgb(0 0 0 / 5%);
 }
 
-.widget h4{
+/* Default styles for widget headings */
+.widget h4 {
     background-color: #fbf3d5;
     margin: 0%;
     padding: 15px;
@@ -19,31 +22,35 @@
     font-size: 13px;
 }
 
-.right-sidebar-div-1{
+/* Default styles for the first right sidebar div */
+.right-sidebar-div-1 {
     background-color: #fdf7e2;
     padding: 15px;
     border: solid 1px #f1e5bc;
 }
 
-.right-sidebar-div-1 .right-sidebar-div-2{
+/* Default styles for the second right sidebar div */
+.right-sidebar-div-1 .right-sidebar-div-2 {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
 }
 
-.right-sidebar-div-1 .right-sidebar-div-2 p{
+/* Default styles for right sidebar div paragraphs */
+.right-sidebar-div-1 .right-sidebar-div-2 p {
     padding-left: 10px;
     margin-top: 0%;
     font-size: 13px;
 }
 
-.widget-tags{
+/* Default styles for the widget tags */
+.widget-tags {
     margin-top: 40px;
-    box-shadow: 3px 3px 10px rgb(0 0 0 / 5%),
-    -3px -3px 10px rgb(0 0 0 / 5%);
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 5%), -3px -3px 10px rgb(0 0 0 / 5%);
 }
 
-.widget-tags h4{
+/* Default styles for widget tag headings */
+.widget-tags h4 {
     margin: 0%;
     padding: 15px;
     background-color: #f8f9f9;
@@ -51,7 +58,8 @@
     font-size: 13px;
 }
 
-.widget-tags-div{
+/* Default styles for widget tags div */
+.widget-tags-div {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -60,10 +68,34 @@
     padding: 10px;
 }
 
-.widget-tags-div p{
+/* Default styles for widget tags paragraphs */
+.widget-tags-div p {
     padding: 5px;
     background-color: #e1ecf4;
     color: #39739d;
     border-radius: 2px;
     font-size: 13px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+
+    /* For example, you can change the width of the right sidebar */
+    .right-sidebar {
+        float: none; /* Remove float to make it full-width */
+        width: 10%; /* Adjust width for smaller screens */
+        margin: 0; /* Remove margin for full-width */
+    }
+
+    /* You can also adjust the font size for better readability on smaller screens */
+    .right-sidebar,
+    .widget h4,
+    .right-sidebar-div-1 p,
+    .widget-tags h4,
+    .widget-tags-div p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    /* You may need to further customize styles based on your specific design requirements. */
 }
